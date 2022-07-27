@@ -33,3 +33,25 @@ body {
     border-radius: 5px;
     border: 1px solid #bbb;
 }
+
+.wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+}
+
+.text-input .to-text {
+    border-radius: 0px;
+    border-left: 1px solid #bbb;
+}

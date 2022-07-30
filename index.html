@@ -21,7 +21,7 @@
                         <i class="fas fa-volume-up"></i>
                         <i class="fas fa-copy"></i>
                     </div>
-                    <select>
+                    <select data-bind="options: countries">
                         <option value="en-US">English</option>
                         <option value="hi-IN">Hindi</option>
                         <option value="ne-NP">Nepali</option>
@@ -30,7 +30,7 @@
                 <li class="exchange"> <i class="fas fa-exchange-alt"></i></li>
 
                 <li class="row to">
-                    <select>
+                    <select data-bind="options: countries">
                         <option value="en-US">English</option>
                         <option value="hi-IN">Hindi</option>
                         <option value="ne-NP">Nepali</option>
@@ -45,9 +45,9 @@
         </div>
         <button>Translator text</button>
     </div>
-
-    <script src="./js/app.js"></script>
-    <script src="./js/countries.js"></script>
+    <script src="/countries.js"></script>
+    <script src="/app.js"></script>
+    
     
 </body>
 </html>

@@ -93,6 +93,8 @@ body {
     outline: none;
     font-size: 18px;
     background: none;
+    width: 45%;
+    margin: 0 30px;
 }
 
 .controls .exchange {

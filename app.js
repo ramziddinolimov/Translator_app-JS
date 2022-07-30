@@ -20,5 +20,7 @@ selectElement.forEach((tag, id) => {
 
 translateBtnElement.addEventListener("click", () => {
     let text = fromTextElement.value;
-    console.log(text);
+    let transletFrom = selectElement[0].value
+    let transletTo = selectElement[1].value
+    console.log(text, transletFrom, transletTo);
 })

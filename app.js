@@ -7,9 +7,9 @@ selectElement.forEach((tag, id) => {
     // console.log(tag);
     for(const country_code in countries) {
         let selected;
-        if(id == 0 && country_code == "EN") {
+        if(id == 0 && country_code == "US") {
             selected = "selected"
-        } else if (id == 1 && country_code == "AZ"){
+        } else if (id == 1 && country_code == "UZ"){
             selected = "selected"
         }
         // console.log(countries[country_code]);
@@ -24,7 +24,7 @@ translateBtnElement.addEventListener("click", () => {
     let transletfrom = selectElement[0].value
     let transleto = selectElement[1].value
     // console.log(text, transletFrom, transletTo);
-    let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=EN|AZ`;
+    let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=US|UZ`;
     console.log(apiUrl);
     fetch(apiUrl).then(res => res.json()).then(data => {
         console.log(data);
